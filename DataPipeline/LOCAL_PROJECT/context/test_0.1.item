@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<talendfile:ContextType xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:talendfile="platform:/resource/org.talend.model/model/TalendFile.xsd" xmi:id="_3Jd44MuXEfCNtJaw9q_2XA" confirmationNeeded="false" name="Default">
+  <contextParameter xmi:id="_3Jef8MuXEfCNtJaw9q_2XA" comment="" name="test_JobHistory" prompt="test_JobHistory?" promptNeeded="false" repositoryContextId="" type="id_String" value="0.0.0.0:10020"/>
+  <contextParameter xmi:id="_3Jef8cuXEfCNtJaw9q_2XA" comment="" name="test_hadoopConfSpecificJar" prompt="test_hadoopConfSpecificJar?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_3Jef8suXEfCNtJaw9q_2XA" comment="" name="test_StagingDirectory" prompt="test_StagingDirectory?" promptNeeded="false" repositoryContextId="" type="id_String" value="/user"/>
+  <contextParameter xmi:id="_3JfHAMuXEfCNtJaw9q_2XA" comment="" name="test_NameNodeUri" prompt="test_NameNodeUri?" promptNeeded="false" repositoryContextId="" type="id_String" value="hdfs://localhost:8020"/>
+  <contextParameter xmi:id="_3JfHAcuXEfCNtJaw9q_2XA" comment="" name="test_ResourceManagerScheduler" prompt="test_ResourceManagerScheduler?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost:8030"/>
+  <contextParameter xmi:id="_3JfHAsuXEfCNtJaw9q_2XA" comment="" name="test_User" prompt="test_User?" promptNeeded="false" repositoryContextId="" type="id_String" value=""/>
+  <contextParameter xmi:id="_3JfHA8uXEfCNtJaw9q_2XA" comment="" name="test_ResourceManager" prompt="test_ResourceManager?" promptNeeded="false" repositoryContextId="" type="id_String" value="localhost:8032"/>
+</talendfile:ContextType>
