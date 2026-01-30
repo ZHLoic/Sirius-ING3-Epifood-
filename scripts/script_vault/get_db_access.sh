@@ -3,11 +3,11 @@
 # Vault config (token backend)
 export VAULT_ADDR="https://127.0.0.1:8200"
 export VAULT_SKIP_VERIFY=true
-export VAULT_TOKEN=hvs.CAESIDCYsmMOKYW26G1XfuavBY1tfCsdtaAE0cRzrT7TPDe9Gh4KHGh2cy5lV0VTWDd4cUU3Rk14azVOcTRiU002WWc
+export VAULT_TOKEN="s.XXXXXXXXXXXXXXXXXXXXXX"  # Remplacer par le token réel
 
 # Extraire les informations de la BD depuis Vault
 vault kv get -format=json secret/epifood/db | jq -r '
   .data.data |
   "DB_USER=\(.username)\nDB_PASSWORD=\(.password)\nDB_HOST=\(.host)\nDB_NAME=\(.database)"
 '
-// EN ATTENTE -> IPFIRE en P1
+# EN ATTENTE -> IPFIRE en P1
