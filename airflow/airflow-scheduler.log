@@ -1,0 +1,257 @@
+2026-01-16 00:49:47,859 WARNING - Could not import pandas. Holidays will not be considered.
+2026-01-16 00:49:47,905 INFO - Starting log server on http://[::]:8793
+2026-01-16 00:49:47,956 INFO - Loaded executor: :LocalExecutor:
+2026-01-16 00:49:47,993 INFO - Worker starting up pid=1262
+2026-01-16 00:49:48,022 INFO - Worker starting up pid=1263
+2026-01-16 00:49:48,035 INFO - Worker starting up pid=1264
+2026-01-16 00:49:48,058 INFO - Worker starting up pid=1265
+2026-01-16 00:49:48,070 INFO - Worker starting up pid=1266
+2026-01-16 00:49:48,082 INFO - Worker starting up pid=1271
+2026-01-16 00:49:48,107 INFO - Worker starting up pid=1272
+2026-01-16 00:49:48,117 INFO - Worker starting up pid=1273
+2026-01-16 00:49:48,135 INFO - Worker starting up pid=1274
+2026-01-16 00:49:48,149 INFO - Worker starting up pid=1275
+2026-01-16 00:49:48,171 INFO - Worker starting up pid=1276
+2026-01-16 00:49:48,178 INFO - Worker starting up pid=1277
+2026-01-16 00:49:48,193 INFO - Worker starting up pid=1278
+2026-01-16 00:49:48,209 INFO - Worker starting up pid=1279
+2026-01-16 00:49:48,223 INFO - Worker starting up pid=1280
+2026-01-16 00:49:48,242 INFO - Worker starting up pid=1281
+2026-01-16 00:49:48,258 INFO - Worker starting up pid=1282
+2026-01-16 00:49:48,278 INFO - Worker starting up pid=1283
+2026-01-16 00:49:48,293 INFO - Worker starting up pid=1284
+2026-01-16 00:49:48,308 INFO - Worker starting up pid=1285
+2026-01-16 00:49:48,322 INFO - Worker starting up pid=1286
+2026-01-16 00:49:48,331 INFO - Worker starting up pid=1287
+2026-01-16 00:49:48,361 INFO - Worker starting up pid=1288
+2026-01-16 00:49:48,367 INFO - Worker starting up pid=1289
+2026-01-16 00:49:48,379 INFO - Worker starting up pid=1290
+2026-01-16 00:49:48,401 INFO - Worker starting up pid=1291
+2026-01-16 00:49:48,417 INFO - Worker starting up pid=1292
+2026-01-16 00:49:48,432 INFO - Worker starting up pid=1293
+2026-01-16 00:49:48,453 INFO - Worker starting up pid=1294
+2026-01-16 00:49:48,460 INFO - Worker starting up pid=1295
+2026-01-16 00:49:48,486 INFO - Worker starting up pid=1296
+2026-01-16 00:49:48,501 INFO - Worker starting up pid=1297
+2026-01-16 00:50:02,352 ERROR - uhoh
+Traceback (most recent call last):
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 96, in _run_worker
+    _execute_work(log, workload)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 124, in _execute_work
+    supervise(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 1984, in supervise
+    process = ActivitySubprocess.start(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 955, in start
+    proc._on_child_started(ti=what, dag_rel_path=dag_rel_path, bundle_info=bundle_info)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 966, in _on_child_started
+    ti_context = self.client.task_instances.start(ti.id, self.pid, start_date)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 215, in start
+    resp = self.client.patch(f"task-instances/{id}/run", content=body.model_dump_json())
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 1218, in patch
+    return self.request(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 887, in request
+    return super().request(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2026-01-16 00:50:02,939 INFO - Marking task as FAILED. dag_id=talend_multi_vm_pipeline, task_id=web_to_bronze, run_id=manual__2026-01-16T00:34:33+00:00, logical_date=20260116T003433, start_date=20260116T003938, end_date=20260116T005002
+2026-01-16 00:50:05,208 ERROR - uhoh
+Traceback (most recent call last):
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 101, in map_httpcore_exceptions
+    yield
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 250, in handle_request
+    resp = self._pool.handle_request(req)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 256, in handle_request
+    raise exc from None
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection_pool.py", line 236, in handle_request
+    response = connection.handle_request(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 101, in handle_request
+    raise exc
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 78, in handle_request
+    stream = self._connect(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_sync/connection.py", line 124, in _connect
+    stream = self._network_backend.connect_tcp(**kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_backends/sync.py", line 207, in connect_tcp
+    with map_exceptions(exc_map):
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpcore/_exceptions.py", line 14, in map_exceptions
+    raise to_exc(exc) from exc
+httpcore.ConnectError: [Errno 111] Connection refused
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 96, in _run_worker
+    _execute_work(log, workload)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 124, in _execute_work
+    supervise(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 1984, in supervise
+    process = ActivitySubprocess.start(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 955, in start
+    proc._on_child_started(ti=what, dag_rel_path=dag_rel_path, bundle_info=bundle_info)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 966, in _on_child_started
+    ti_context = self.client.task_instances.start(ti.id, self.pid, start_date)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 215, in start
+    resp = self.client.patch(f"task-instances/{id}/run", content=body.model_dump_json())
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 1218, in patch
+    return self.request(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 420, in exc_check
+    raise retry_exc.reraise()
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 187, in reraise
+    raise self.last_attempt.result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 887, in request
+    return super().request(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 979, in _send_handling_redirects
+    response = self._send_single_request(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 1014, in _send_single_request
+    response = transport.handle_request(request)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 249, in handle_request
+    with map_httpcore_exceptions():
+  File "/usr/lib/python3.10/contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_transports/default.py", line 118, in map_httpcore_exceptions
+    raise mapped_exc(message) from exc
+httpx.ConnectError: [Errno 111] Connection refused
+2026-01-16 00:50:05,466 INFO - Marking task as FAILED. dag_id=talend_multi_vm_pipeline, task_id=web_to_bronze, run_id=manual__2026-01-16T00:39:14+00:00, logical_date=20260116T003914, start_date=20260116T003917, end_date=20260116T005005
+2026-01-16 00:59:35,005 ERROR - uhoh
+Traceback (most recent call last):
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 96, in _run_worker
+    _execute_work(log, workload)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/executors/local_executor.py", line 124, in _execute_work
+    supervise(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 1984, in supervise
+    process = ActivitySubprocess.start(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 955, in start
+    proc._on_child_started(ti=what, dag_rel_path=dag_rel_path, bundle_info=bundle_info)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/execution_time/supervisor.py", line 966, in _on_child_started
+    ti_context = self.client.task_instances.start(ti.id, self.pid, start_date)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 215, in start
+    resp = self.client.patch(f"task-instances/{id}/run", content=body.model_dump_json())
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 1218, in patch
+    return self.request(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 338, in wrapped_f
+    return copy(f, *args, **kw)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 477, in __call__
+    do = self.iter(retry_state=retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 378, in iter
+    result = action(retry_state)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 400, in <lambda>
+    self._add_action_func(lambda rs: rs.outcome.result())
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 451, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/tenacity/__init__.py", line 480, in __call__
+    result = fn(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 887, in request
+    return super().request(*args, **kwargs)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 825, in request
+    return self.send(request, auth=auth, follow_redirects=follow_redirects)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 914, in send
+    response = self._send_handling_auth(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 942, in _send_handling_auth
+    response = self._send_handling_redirects(
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 999, in _send_handling_redirects
+    raise exc
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/httpx/_client.py", line 982, in _send_handling_redirects
+    hook(response)
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 180, in raise_on_4xx_5xx
+    return get_json_error(response) or response.raise_for_status()
+  File "/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/sdk/api/client.py", line 176, in get_json_error
+    raise err
+airflow.sdk.api.client.ServerResponseError: Server returned error
+2026-01-16 01:00:01,207 INFO - Setting next_dagrun for talend_multi_vm_pipeline to 2026-01-17 01:00:00+00:00, run_after=2026-01-17 01:00:00+00:00
+2026-01-16 01:19:48,741 INFO - checking for stale bundle versions locally
+2026-01-16 01:49:48,796 INFO - checking for stale bundle versions locally
+2026-01-16 02:19:48,840 INFO - checking for stale bundle versions locally
+2026-01-16 02:49:48,882 INFO - checking for stale bundle versions locally
+2026-01-16 03:19:48,921 INFO - checking for stale bundle versions locally
+2026-01-16 03:49:48,960 INFO - checking for stale bundle versions locally
+2026-01-16 04:19:48,994 INFO - checking for stale bundle versions locally
+2026-01-16 04:49:49,036 INFO - checking for stale bundle versions locally
+2026-01-16 05:19:49,072 INFO - checking for stale bundle versions locally
+2026-01-16 05:49:49,112 INFO - checking for stale bundle versions locally
+2026-01-16 06:19:49,156 INFO - checking for stale bundle versions locally
+2026-01-16 06:49:49,189 INFO - checking for stale bundle versions locally
+2026-01-16 07:19:49,237 INFO - checking for stale bundle versions locally
+2026-01-16 07:49:49,270 INFO - checking for stale bundle versions locally
+2026-01-16 08:19:49,310 INFO - checking for stale bundle versions locally
+2026-01-16 08:49:49,382 INFO - checking for stale bundle versions locally
+2026-01-16 09:19:49,436 INFO - checking for stale bundle versions locally
+2026-01-16 09:49:49,481 INFO - checking for stale bundle versions locally
+2026-01-16 10:19:49,517 INFO - checking for stale bundle versions locally
+2026-01-16 10:49:49,556 INFO - checking for stale bundle versions locally

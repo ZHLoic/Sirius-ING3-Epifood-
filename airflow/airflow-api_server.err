@@ -1,0 +1,18 @@
+[2m2026-01-16T00:50:44.158690Z[0m [[32m[1minfo     [0m] [1mRunning the uvicorn with:
+Apps: all
+Workers: 1
+Host: 0.0.0.0:8080
+Timeout: 120
+Logfiles: -
+=================================================================[0m [[0m[1m[34mairflow.cli.commands.api_server_command[0m][0m [36mloc[0m=[35mapi_server_command.py:54[0m
+/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/api_fastapi/execution_api/routes/__init__.py:23 DeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+[2m2026-01-16T00:50:44.667759Z[0m [[33m[1mwarning  [0m] [1mCould not import pandas. Holidays will not be considered.[0m [[0m[1m[34mairflow.example_dags.plugins.workday[0m][0m [36mloc[0m=[35mworkday.py:41[0m
+/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/api_fastapi/core_api/routes/public/__init__.py:36 DeprecationWarning: 'HTTP_422_UNPROCESSABLE_ENTITY' is deprecated. Use 'HTTP_422_UNPROCESSABLE_CONTENT' instead.
+INFO:     Started server process [1321]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8080 (Press CTRL+C to quit)
+/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/providers/ftp/hooks/ftp.py:24 DeprecatedImportWarning: The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.
+/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/providers/http/hooks/http.py:33 DeprecatedImportWarning: The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.
+/home/epifood/airflow_venv/lib/python3.10/site-packages/airflow/providers/imap/hooks/imap.py:33 DeprecatedImportWarning: The `airflow.hooks.base.BaseHook` attribute is deprecated. Please use `'airflow.sdk.bases.hook.BaseHook'`.
+[2m2026-01-16T00:52:20.405200Z[0m [[32m[1minfo     [0m] [1mLoaded executor: :LocalExecutor:[0m [[0m[1m[34mairflow.executors.executor_loader[0m][0m [36mloc[0m=[35mexecutor_loader.py:281[0m

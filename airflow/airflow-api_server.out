@@ -1,0 +1,947 @@
+INFO:     172.31.240.4:53177 - "GET / HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53177 - "GET /static/assets/index-BpILZJIF.js HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53177 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53178 - "GET /static/i18n/locales/fr/common.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53177 - "GET /static/i18n/locales/fr/dags.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53184 - "GET /static/i18n/locales/fr/dashboard.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53186 - "GET /static/i18n/locales/fr/browse.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53185 - "GET /static/i18n/locales/fr/admin.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53178 - "GET /static/i18n/locales/fr/assets.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53187 - "GET /static/i18n/locales/fr/components.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53177 - "GET /static/i18n/locales/fr/hitl.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53184 - "GET /static/i18n/locales/en/dashboard.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53185 - "GET /static/i18n/locales/en/common.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53185 - "GET /static/pin_32.png HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53184 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53177 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53185 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53186 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53186 - "GET /api/v2/plugins/importErrors HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53177 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53185 - "GET /ui/dashboard/historical_metrics_data?start_date=2026-01-15T00%3A51%3A05.415Z HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53184 - "GET /ui/dags?limit=10&is_favorite=true HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53184 - "GET /static/i18n/locales/en/dags.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53186 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53187 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53184 - "GET /static/i18n/locales/en/admin.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53186 - "GET /static/i18n/locales/en/browse.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53178 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53187 - "GET /static/i18n/locales/en/assets.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53184 - "GET /static/i18n/locales/en/components.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53187 - "GET /static/i18n/locales/en/hitl.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53186 - "GET /static/i18n/locales/fr/dag.json HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53178 - "GET /static/i18n/locales/en/dag.json HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53177 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2026-01-15T00%3A51%3A05.415Z&timestamp_lte=2026-01-16T00%3A51%3A05.415Z HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53185 - "GET /api/v2/pools HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53188 - "GET /api/v2/dagTags?limit=10&offset=0&order_by=name&tag_name_pattern= HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53189 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53193 - "GET /ui/next_run_assets/asset_consumes_1_and_2 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53189 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53192 - "GET /ui/next_run_assets/asset_s3_bucket_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53188 - "GET /ui/next_run_assets/asset_consumes_1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53190 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53191 - "GET /ui/next_run_assets/asset_consumes_1_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53188 - "GET /ui/next_run_assets/conditional_asset_and_time_based_timetable HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53190 - "GET /ui/next_run_assets/consume_1_or_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53191 - "GET /ui/next_run_assets/consume_1_or_both_2_and_3_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53193 - "GET /ui/next_run_assets/asset_consumes_unknown_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53189 - "GET /ui/next_run_assets/asset_s3_bucket_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53192 - "GET /ui/next_run_assets/consume_1_and_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53190 - "GET /ui/next_run_assets/example_asset_with_watchers HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53188 - "GET /ui/next_run_assets/consumes_asset_decorator HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53218 - "GET /dags HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53221 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53222 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53225 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53223 - "GET /api/v2/dagTags?limit=10&offset=0&order_by=name&tag_name_pattern= HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53224 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53225 - "GET /ui/next_run_assets/asset_consumes_1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/next_run_assets/asset_consumes_unknown_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53224 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53223 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53221 - "GET /ui/next_run_assets/asset_consumes_1_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53222 - "GET /ui/next_run_assets/asset_consumes_1_and_2 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53225 - "GET /ui/next_run_assets/asset_s3_bucket_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/next_run_assets/asset_s3_bucket_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53224 - "GET /ui/next_run_assets/conditional_asset_and_time_based_timetable HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53223 - "GET /ui/next_run_assets/consume_1_and_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53221 - "GET /ui/next_run_assets/consume_1_or_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53222 - "GET /ui/next_run_assets/consume_1_or_both_2_and_3_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53225 - "GET /ui/next_run_assets/consumes_asset_decorator HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/next_run_assets/example_asset_with_watchers HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=ta&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=tal&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=tale&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53220 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=talend&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53226 - "GET /static/assets/FailedLogs-DpIqNSxa.js HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.4:53226 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53229 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53228 - "GET /ui/backfills?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53230 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions?order_by=-version_number HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53226 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=talend_multi_vm_pipeline&timestamp_gte=2026-01-15T00%3A51%3A42.381Z&timestamp_lte=2026-01-16T00%3A51%3A42.381Z HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53229 - "GET /api/v2/dags/talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53228 - "GET /api/v2/dagWarnings?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53229 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53227 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T00%3A51%3A42.381Z&run_after_lte=2026-01-16T00%3A51%3A42.381Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53231 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T00%3A51%3A42.381Z&run_after_lte=2026-01-16T00%3A51%3A42.381Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53230 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53226 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53230 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53227 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53229 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53228 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53226 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53228 - "GET /api/v2/connections?limit=50&offset=0&order_by=connection_id HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53226 - "GET /ui/connections/hook_meta HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53239 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53238 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53235 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=talend_multi_vm_pipeline&timestamp_gte=2026-01-15T00%3A51%3A51.003Z&timestamp_lte=2026-01-16T00%3A51%3A51.003Z HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53239 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53237 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53234 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T00%3A51%3A51.003Z&run_after_lte=2026-01-16T00%3A51%3A51.003Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53236 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T00%3A51%3A51.003Z&run_after_lte=2026-01-16T00%3A51%3A51.003Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53240 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53241 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53241 - "GET /api/v2/dags/talend_multi_vm_pipeline/tasks/web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53244 - "GET /ui/grid/structure/talend_multi_vm_pipeline?limit=1&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53242 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53241 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53243 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?task_id=web_to_bronze&state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53240 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?task_id=web_to_bronze&run_after_gte=2026-01-15T00%3A51%3A54.910Z&run_after_lte=2026-01-16T00%3A51%3A54.910Z&state=failed&limit=14 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53245 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?task_id=web_to_bronze&limit=14&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53246 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53248 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53247 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?task_id=web_to_bronze&limit=14&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53246 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?task_id=web_to_bronze&run_after_gte=2026-01-15T00%3A51%3A54.910Z&run_after_lte=2026-01-16T00%3A51%3A54.910Z&state=failed&limit=14 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53247 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53246 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53246 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53249 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53248 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:19.765717Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc449-a14f-722a-817e-939916033681[0m
+INFO:     172.31.240.4:53252 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:19.864879Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a14f-722a-817e-939916033681[0m
+INFO:     172.31.240.4:53251 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53254 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53250 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53253 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53250 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:21.796352Z[0m [[32m[1minfo     [0m] [1mDuplicate start request received[0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:178[0m [36mti_id[0m=[35m019bc449-a14f-722a-817e-939916033681[0m
+[2m2026-01-16T00:52:21.797926Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a14f-722a-817e-939916033681[0m
+INFO:     127.0.0.1:46030 - "PATCH /execution/task-instances/019bc449-a14f-722a-817e-939916033681/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46030 - "PUT /execution/task-instances/019bc449-a14f-722a-817e-939916033681/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53270 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53272 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53271 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53273 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53273 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53273 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:46030 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53273 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53271 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53273 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53271 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53283 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53283 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53283 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53283 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53283 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53284 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53284 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53284 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51518 - "PUT /execution/task-instances/019bc449-a14f-722a-817e-939916033681/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53286 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53285 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:34.822329Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a14f-722a-817e-939916033681[0m
+INFO:     127.0.0.1:51518 - "PATCH /execution/task-instances/019bc449-a14f-722a-817e-939916033681/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53285 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53286 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53286 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:35.963280Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc449-a150-7b79-ad51-de96ab89dec7[0m
+[2m2026-01-16T00:52:35.970083Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a150-7b79-ad51-de96ab89dec7[0m
+INFO:     127.0.0.1:51524 - "PATCH /execution/task-instances/019bc449-a150-7b79-ad51-de96ab89dec7/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51524 - "PUT /execution/task-instances/019bc449-a150-7b79-ad51-de96ab89dec7/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:51524 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53299 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53299 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53299 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53299 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55550 - "PUT /execution/task-instances/019bc449-a150-7b79-ad51-de96ab89dec7/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53300 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:45.881406Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a150-7b79-ad51-de96ab89dec7[0m
+INFO:     127.0.0.1:55550 - "PATCH /execution/task-instances/019bc449-a150-7b79-ad51-de96ab89dec7/state HTTP/1.1" 204 No Content
+[2m2026-01-16T00:52:46.703215Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc449-a151-7e25-af45-0e80252e3322[0m
+[2m2026-01-16T00:52:46.704806Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a151-7e25-af45-0e80252e3322[0m
+INFO:     127.0.0.1:55564 - "PATCH /execution/task-instances/019bc449-a151-7e25-af45-0e80252e3322/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55564 - "PUT /execution/task-instances/019bc449-a151-7e25-af45-0e80252e3322/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:55564 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53300 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:52:54.175765Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35mup_for_retry[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc449-a151-7e25-af45-0e80252e3322[0m
+INFO:     127.0.0.1:34914 - "PATCH /execution/task-instances/019bc449-a151-7e25-af45-0e80252e3322/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53309 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53309 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53311 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53316 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53316 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53316 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53316 - "GET /api/v2/dags/talend_multi_vm_pipeline/tasks/silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53317 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53320 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53318 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53321 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53321 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53328 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53328 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53328 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/bronze_to_silver/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53329 - "GET /api/v2/dags/talend_multi_vm_pipeline/tasks/bronze_to_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/hitlDetails?task_id=bronze_to_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00/taskInstances/bronze_to_silver/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53327 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53329 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53329 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53329 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53329 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A51%3A57%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "PATCH /api/v2/connections/ssh_vm_gold?update_mask=port HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "GET /api/v2/connections?limit=50&offset=0&order_by=connection_id HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53339 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=talend&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53349 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53346 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=talend_multi_vm_pipeline&timestamp_gte=2026-01-15T00%3A54%3A10.119Z&timestamp_lte=2026-01-16T00%3A54%3A10.119Z HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53347 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53349 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53348 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53345 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53347 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53347 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53349 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53348 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53347 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53345 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53346 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53349 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53347 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53345 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53348 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53346 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T00%3A54%3A10.119Z&run_after_lte=2026-01-16T00%3A54%3A10.119Z&state=failed HTTP/1.1" 200 OK
+[2m2026-01-16T00:54:14.888485Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44b-b0c8-7007-b133-24e5522932f1[0m
+[2m2026-01-16T00:54:14.913796Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0c8-7007-b133-24e5522932f1[0m
+INFO:     127.0.0.1:45628 - "PATCH /execution/task-instances/019bc44b-b0c8-7007-b133-24e5522932f1/run HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53346 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53348 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53344 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45628 - "PUT /execution/task-instances/019bc44b-b0c8-7007-b133-24e5522932f1/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53345 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45628 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:54:18.995637Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0c8-7007-b133-24e5522932f1[0m
+INFO:     127.0.0.1:45628 - "PATCH /execution/task-instances/019bc44b-b0c8-7007-b133-24e5522932f1/state HTTP/1.1" 204 No Content
+[2m2026-01-16T00:54:20.803701Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44b-b0c9-7b8b-82f7-346381dce40d[0m
+[2m2026-01-16T00:54:20.806347Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0c9-7b8b-82f7-346381dce40d[0m
+INFO:     127.0.0.1:49798 - "PATCH /execution/task-instances/019bc44b-b0c9-7b8b-82f7-346381dce40d/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49798 - "PUT /execution/task-instances/019bc44b-b0c9-7b8b-82f7-346381dce40d/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53351 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49798 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53351 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53352 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:54:26.217120Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0c9-7b8b-82f7-346381dce40d[0m
+INFO:     127.0.0.1:49798 - "PATCH /execution/task-instances/019bc44b-b0c9-7b8b-82f7-346381dce40d/state HTTP/1.1" 204 No Content
+[2m2026-01-16T00:54:26.881906Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44b-b0ca-7035-b64c-956647ff0ebe[0m
+[2m2026-01-16T00:54:26.883377Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0ca-7035-b64c-956647ff0ebe[0m
+INFO:     127.0.0.1:49814 - "PATCH /execution/task-instances/019bc44b-b0ca-7035-b64c-956647ff0ebe/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49814 - "PUT /execution/task-instances/019bc44b-b0ca-7035-b64c-956647ff0ebe/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53353 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49814 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:54:28.040495Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35mup_for_retry[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-b0ca-7035-b64c-956647ff0ebe[0m
+INFO:     127.0.0.1:49814 - "PATCH /execution/task-instances/019bc44b-b0ca-7035-b64c-956647ff0ebe/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53353 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53353 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53354 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53354 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53362 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53361 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53361 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53363 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53360 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53364 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53365 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53366 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53367 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53368 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53365 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53396 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53397 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /api/v2/dags/talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A54%3A12%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53397 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53396 - "GET /ui/backfills?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53396 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53399 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53398 - "GET /api/v2/dagWarnings?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53397 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions?order_by=-version_number HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:56:57.792861Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44e-2d03-76da-a7b8-fb2c887f4d1b[0m
+[2m2026-01-16T00:56:57.794454Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d03-76da-a7b8-fb2c887f4d1b[0m
+INFO:     127.0.0.1:43450 - "PATCH /execution/task-instances/019bc44e-2d03-76da-a7b8-fb2c887f4d1b/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:43450 - "PUT /execution/task-instances/019bc44e-2d03-76da-a7b8-fb2c887f4d1b/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:43450 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:01.887746Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d03-76da-a7b8-fb2c887f4d1b[0m
+INFO:     127.0.0.1:43450 - "PATCH /execution/task-instances/019bc44e-2d03-76da-a7b8-fb2c887f4d1b/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53401 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:03.792574Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44e-2d04-7a0a-8635-d381ff6d7c43[0m
+[2m2026-01-16T00:57:03.794169Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d04-7a0a-8635-d381ff6d7c43[0m
+INFO:     127.0.0.1:56914 - "PATCH /execution/task-instances/019bc44e-2d04-7a0a-8635-d381ff6d7c43/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56914 - "PUT /execution/task-instances/019bc44e-2d04-7a0a-8635-d381ff6d7c43/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:56914 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53400 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53401 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56914 - "PUT /execution/task-instances/019bc44e-2d04-7a0a-8635-d381ff6d7c43/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53408 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:09.989059Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d04-7a0a-8635-d381ff6d7c43[0m
+INFO:     127.0.0.1:56914 - "PATCH /execution/task-instances/019bc44e-2d04-7a0a-8635-d381ff6d7c43/state HTTP/1.1" 204 No Content
+[2m2026-01-16T00:57:11.834028Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44e-2d05-7981-a337-f409b95f4e40[0m
+[2m2026-01-16T00:57:11.835384Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d05-7981-a337-f409b95f4e40[0m
+INFO:     172.31.240.4:53409 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53624 - "PATCH /execution/task-instances/019bc44e-2d05-7981-a337-f409b95f4e40/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53624 - "PUT /execution/task-instances/019bc44e-2d05-7981-a337-f409b95f4e40/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53409 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53624 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53408 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53409 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53640 - "PUT /execution/task-instances/019bc44e-2d05-7981-a337-f409b95f4e40/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53410 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:18.637789Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44e-2d05-7981-a337-f409b95f4e40[0m
+INFO:     127.0.0.1:53640 - "PATCH /execution/task-instances/019bc44e-2d05-7981-a337-f409b95f4e40/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.4:53410 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.4:53410 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T00%3A56%3A54%2B00%3A00 HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:54.857011Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44a-7b1e-7b6d-beea-8f8b485ad185[0m
+[2m2026-01-16T00:57:54.858558Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44a-7b1e-7b6d-beea-8f8b485ad185[0m
+INFO:     127.0.0.1:47360 - "PATCH /execution/task-instances/019bc44a-7b1e-7b6d-beea-8f8b485ad185/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:47360 - "PUT /execution/task-instances/019bc44a-7b1e-7b6d-beea-8f8b485ad185/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:47360 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+[2m2026-01-16T00:57:59.252170Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44a-7b1e-7b6d-beea-8f8b485ad185[0m
+INFO:     127.0.0.1:47360 - "PATCH /execution/task-instances/019bc44a-7b1e-7b6d-beea-8f8b485ad185/state HTTP/1.1" 204 No Content
+[2m2026-01-16T00:59:29.620480Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc44b-e9c6-7433-832e-d691c254a5a8[0m
+[2m2026-01-16T00:59:29.622488Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-e9c6-7433-832e-d691c254a5a8[0m
+INFO:     127.0.0.1:33660 - "PATCH /execution/task-instances/019bc44b-e9c6-7433-832e-d691c254a5a8/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:33660 - "PUT /execution/task-instances/019bc44b-e9c6-7433-832e-d691c254a5a8/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:33660 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+[2m2026-01-16T00:59:29.972697Z[0m [[33m[1mwarning  [0m] [1mCannot start Task Instance in invalid state[0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:180[0m [36mprevious_state[0m=[35mrunning[0m [36mti_id[0m=[35m019bc44b-e9c6-7433-832e-d691c254a5a8[0m
+INFO:     127.0.0.1:33674 - "PATCH /execution/task-instances/019bc44b-e9c6-7433-832e-d691c254a5a8/run HTTP/1.1" 409 Conflict
+[2m2026-01-16T00:59:34.295554Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc44b-e9c6-7433-832e-d691c254a5a8[0m
+INFO:     127.0.0.1:33660 - "PATCH /execution/task-instances/019bc44b-e9c6-7433-832e-d691c254a5a8/state HTTP/1.1" 204 No Content
+[2m2026-01-16T01:00:02.284349Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8[0m
+[2m2026-01-16T01:00:02.287178Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8[0m
+INFO:     127.0.0.1:38056 - "PATCH /execution/task-instances/019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38056 - "PUT /execution/task-instances/019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:38056 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+[2m2026-01-16T01:00:06.269386Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8[0m
+INFO:     127.0.0.1:38056 - "PATCH /execution/task-instances/019bc450-fef8-7a2b-b5a1-76f8b5e3a3b8/state HTTP/1.1" 204 No Content
+[2m2026-01-16T01:00:07.490994Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc450-fef9-73ca-ac52-3830baf7a1c3[0m
+[2m2026-01-16T01:00:07.495584Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fef9-73ca-ac52-3830baf7a1c3[0m
+INFO:     127.0.0.1:38072 - "PATCH /execution/task-instances/019bc450-fef9-73ca-ac52-3830baf7a1c3/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38072 - "PUT /execution/task-instances/019bc450-fef9-73ca-ac52-3830baf7a1c3/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:38072 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38072 - "PUT /execution/task-instances/019bc450-fef9-73ca-ac52-3830baf7a1c3/heartbeat HTTP/1.1" 204 No Content
+[2m2026-01-16T01:00:13.419645Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fef9-73ca-ac52-3830baf7a1c3[0m
+INFO:     127.0.0.1:38072 - "PATCH /execution/task-instances/019bc450-fef9-73ca-ac52-3830baf7a1c3/state HTTP/1.1" 204 No Content
+[2m2026-01-16T01:00:14.491723Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc450-fefa-712b-a160-f02d8060b8e7[0m
+[2m2026-01-16T01:00:14.501316Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fefa-712b-a160-f02d8060b8e7[0m
+INFO:     127.0.0.1:45390 - "PATCH /execution/task-instances/019bc450-fefa-712b-a160-f02d8060b8e7/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:45390 - "PUT /execution/task-instances/019bc450-fefa-712b-a160-f02d8060b8e7/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:45390 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+[2m2026-01-16T01:00:19.021949Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc450-fefa-712b-a160-f02d8060b8e7[0m
+INFO:     127.0.0.1:45390 - "PATCH /execution/task-instances/019bc450-fefa-712b-a160-f02d8060b8e7/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61733 - "GET / HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61733 - "GET /static/assets/index-BpILZJIF.js HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61733 - "GET /ui/config HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61734 - "GET /static/i18n/locales/fr/common.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61735 - "GET /static/i18n/locales/fr/admin.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61736 - "GET /static/i18n/locales/fr/assets.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61737 - "GET /static/i18n/locales/fr/dags.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61733 - "GET /static/i18n/locales/fr/browse.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61738 - "GET /static/i18n/locales/fr/dashboard.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61734 - "GET /static/i18n/locales/fr/components.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61737 - "GET /static/i18n/locales/fr/hitl.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61735 - "GET /api/v2/auth/login?next=http%3A%2F%2F172.31.253.33%3A8080%2F HTTP/1.1" 307 Temporary Redirect
+INFO:     172.31.240.3:61736 - "GET /static/i18n/locales/en/common.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61738 - "GET /ui/config HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61733 - "GET /static/i18n/locales/en/dashboard.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61734 - "GET /ui/auth/menus HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61738 - "GET /api/v2/plugins HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61736 - "GET /static/i18n/locales/en/dags.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61733 - "GET /static/i18n/locales/en/assets.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61735 - "GET /static/i18n/locales/en/admin.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61737 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61734 - "GET /static/i18n/locales/en/components.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61738 - "GET /static/i18n/locales/en/hitl.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61736 - "GET /static/i18n/locales/en/browse.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61737 - "GET /api/v2/auth/login?next=http%3A%2F%2F172.31.253.33%3A8080%2F HTTP/1.1" 307 Temporary Redirect
+INFO:     172.31.240.3:61737 - "GET /auth/login?next=http://172.31.253.33:8080/ HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61737 - "GET /auth/static/assets/index-C4WYu3P1.js HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61737 - "GET /auth/static/pin_32.png HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61740 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61740 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61745 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61745 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61766 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61766 - "POST /auth/token HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61785 - "GET / HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61785 - "GET /ui/config HTTP/1.1" 401 Unauthorized
+INFO:     172.31.240.3:61785 - "GET /api/v2/auth/login?next=http%3A%2F%2F172.31.253.33%3A8080%2F HTTP/1.1" 307 Temporary Redirect
+INFO:     172.31.240.3:61785 - "GET /auth/login?next=http://172.31.253.33:8080/ HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61795 - "POST /auth/token HTTP/1.1" 201 Created
+INFO:     172.31.240.3:61795 - "GET / HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61795 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61795 - "GET /static/i18n/locales/fr/dag.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61796 - "GET /static/i18n/locales/en/dag.json HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61797 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61798 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61800 - "GET /api/v2/plugins/importErrors HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61799 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61796 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61800 - "GET /ui/dashboard/historical_metrics_data?start_date=2026-01-15T07%3A42%3A44.715Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61797 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61795 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61797 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61800 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2026-01-15T07%3A42%3A44.715Z&timestamp_lte=2026-01-16T07%3A42%3A44.715Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61798 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61799 - "GET /ui/dags?limit=10&is_favorite=true HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61796 - "GET /api/v2/pools HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/dagTags?limit=10&offset=0&order_by=name&tag_name_pattern= HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /ui/next_run_assets/asset_consumes_unknown_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /ui/next_run_assets/asset_consumes_1_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /ui/next_run_assets/asset_consumes_1_and_2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /ui/next_run_assets/asset_consumes_1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/next_run_assets/asset_s3_bucket_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /ui/next_run_assets/consume_1_or_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /ui/next_run_assets/asset_s3_bucket_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /ui/next_run_assets/consume_1_or_both_2_and_3_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /ui/next_run_assets/conditional_asset_and_time_based_timetable HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /ui/next_run_assets/consume_1_and_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /ui/next_run_assets/example_asset_with_watchers HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/next_run_assets/consumes_asset_decorator HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=talend&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /static/assets/FailedLogs-DpIqNSxa.js HTTP/1.1" 304 Not Modified
+INFO:     172.31.240.3:61814 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=talend_multi_vm_pipeline&timestamp_gte=2026-01-15T07%3A42%3A54.815Z&timestamp_lte=2026-01-16T07%3A42%3A54.815Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /api/v2/dags/talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions?order_by=-version_number HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/backfills?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /api/v2/dagWarnings?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61812 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61811 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A42%3A54.815Z&run_after_lte=2026-01-16T07%3A42%3A54.815Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61815 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61813 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61810 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61814 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:01.348265Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c1-e86e-7750-bcc4-05fbe20d5e2b[0m
+[2m2026-01-16T07:43:01.358571Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e86e-7750-bcc4-05fbe20d5e2b[0m
+INFO:     127.0.0.1:38638 - "PATCH /execution/task-instances/019bc5c1-e86e-7750-bcc4-05fbe20d5e2b/run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38638 - "PUT /execution/task-instances/019bc5c1-e86e-7750-bcc4-05fbe20d5e2b/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61816 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38638 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61816 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61817 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:38650 - "PUT /execution/task-instances/019bc5c1-e86e-7750-bcc4-05fbe20d5e2b/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61822 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions/2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /api/v2/dagSources/talend_multi_vm_pipeline?version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41858 - "PUT /execution/task-instances/019bc5c1-e86e-7750-bcc4-05fbe20d5e2b/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61823 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:15.413793Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e86e-7750-bcc4-05fbe20d5e2b[0m
+INFO:     127.0.0.1:41858 - "PATCH /execution/task-instances/019bc5c1-e86e-7750-bcc4-05fbe20d5e2b/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61823 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61823 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61822 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:17.248998Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f[0m
+[2m2026-01-16T07:43:17.260149Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f[0m
+INFO:     127.0.0.1:41864 - "PATCH /execution/task-instances/019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f/run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61822 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41864 - "PUT /execution/task-instances/019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:41864 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61822 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35372 - "PUT /execution/task-instances/019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61824 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:35372 - "PUT /execution/task-instances/019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61824 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61824 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61825 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:29.281378Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f[0m
+INFO:     127.0.0.1:35372 - "PATCH /execution/task-instances/019bc5c1-e86f-7bce-a0fe-73ad33ba4b5f/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:31.057447Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c1-e870-7041-865e-c65a4ea073c4[0m
+[2m2026-01-16T07:43:31.060034Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e870-7041-865e-c65a4ea073c4[0m
+INFO:     127.0.0.1:48304 - "PATCH /execution/task-instances/019bc5c1-e870-7041-865e-c65a4ea073c4/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48304 - "PUT /execution/task-instances/019bc5c1-e870-7041-865e-c65a4ea073c4/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48304 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     127.0.0.1:48314 - "PUT /execution/task-instances/019bc5c1-e870-7041-865e-c65a4ea073c4/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61826 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A42%3A56%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T07:43:40.025865Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c1-e870-7041-865e-c65a4ea073c4[0m
+INFO:     127.0.0.1:48314 - "PATCH /execution/task-instances/019bc5c1-e870-7041-865e-c65a4ea073c4/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:61945 - "GET / HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61945 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61945 - "GET /ui/auth/menus HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61946 - "GET /api/v2/version HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61947 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61945 - "GET /api/v2/plugins/importErrors HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61950 - "GET /api/v2/importErrors?limit=1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61946 - "GET /ui/dashboard/dag_stats HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61945 - "GET /api/v2/monitor/health HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61949 - "GET /api/v2/dags/~/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61948 - "GET /api/v2/dags/~/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61950 - "GET /ui/dashboard/historical_metrics_data?start_date=2026-01-15T07%3A45%3A29.449Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61946 - "GET /api/v2/assets/events?limit=6&order_by=-timestamp&timestamp_gte=2026-01-15T07%3A45%3A29.449Z&timestamp_lte=2026-01-16T07%3A45%3A29.449Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61945 - "GET /api/v2/pools HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61947 - "GET /ui/dags?limit=10&is_favorite=true HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61951 - "GET /api/v2/dagTags?limit=10&offset=0&order_by=name&tag_name_pattern= HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61952 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61952 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61951 - "GET /ui/next_run_assets/asset_alias_example_alias_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61958 - "GET /ui/next_run_assets/asset_consumes_1_and_2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61957 - "GET /ui/next_run_assets/asset_consumes_1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61960 - "GET /ui/next_run_assets/asset_consumes_unknown_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61959 - "GET /ui/next_run_assets/asset_consumes_1_never_scheduled HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61952 - "GET /ui/next_run_assets/asset_s3_bucket_consumer HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61951 - "GET /ui/next_run_assets/conditional_asset_and_time_based_timetable HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61957 - "GET /ui/next_run_assets/consume_1_or_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61958 - "GET /ui/next_run_assets/asset_s3_bucket_consumer_with_no_taskflow HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61952 - "GET /ui/next_run_assets/consumes_asset_decorator HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61960 - "GET /ui/next_run_assets/consume_1_or_both_2_and_3_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61959 - "GET /ui/next_run_assets/consume_1_and_2_with_asset_expressions HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61951 - "GET /ui/next_run_assets/example_asset_with_watchers HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61961 - "GET /ui/dags?dag_runs_limit=1&limit=50&offset=0&dag_display_name_pattern=talend&exclude_stale=true&order_by=dag_display_name HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61964 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61966 - "GET /ui/backfills?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61963 - "GET /api/v2/assets/events?limit=10&order_by=-timestamp&source_dag_id=talend_multi_vm_pipeline&timestamp_gte=2026-01-15T07%3A45%3A37.225Z&timestamp_lte=2026-01-16T07%3A45%3A37.225Z HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61965 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61961 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61962 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61965 - "GET /api/v2/dagWarnings?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61964 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions?order_by=-version_number HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61961 - "GET /api/v2/dags/talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61962 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61963 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails?state=deferred&response_received=false HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61966 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61964 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61965 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61965 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61962 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61961 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61964 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61966 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61963 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61967 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61968 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61968 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61967 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61971 - "GET /ui/dags/talend_multi_vm_pipeline/latest_run HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61971 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61971 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61976 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61971 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=1&state=running&state=queued HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61969 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns?limit=10&run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61970 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/~/taskInstances?run_after_gte=2026-01-15T07%3A45%3A37.225Z&run_after_lte=2026-01-16T07%3A45%3A37.225Z&state=failed&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61978 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61977 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61980 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61979 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:61980 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+[2m2026-01-16T07:45:50.734190Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c4-847a-737b-804a-930c5dd8fac1[0m
+[2m2026-01-16T07:45:50.736235Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847a-737b-804a-930c5dd8fac1[0m
+INFO:     127.0.0.1:41938 - "PATCH /execution/task-instances/019bc5c4-847a-737b-804a-930c5dd8fac1/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41938 - "PUT /execution/task-instances/019bc5c4-847a-737b-804a-930c5dd8fac1/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:41938 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+[2m2026-01-16T07:45:54.924718Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847a-737b-804a-930c5dd8fac1[0m
+INFO:     127.0.0.1:41938 - "PATCH /execution/task-instances/019bc5c4-847a-737b-804a-930c5dd8fac1/state HTTP/1.1" 204 No Content
+[2m2026-01-16T07:45:55.875539Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c4-847b-7fd5-8c87-8349b8f8c6e4[0m
+[2m2026-01-16T07:45:55.879069Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847b-7fd5-8c87-8349b8f8c6e4[0m
+INFO:     127.0.0.1:41944 - "PATCH /execution/task-instances/019bc5c4-847b-7fd5-8c87-8349b8f8c6e4/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41944 - "PUT /execution/task-instances/019bc5c4-847b-7fd5-8c87-8349b8f8c6e4/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:41944 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     127.0.0.1:41944 - "PUT /execution/task-instances/019bc5c4-847b-7fd5-8c87-8349b8f8c6e4/heartbeat HTTP/1.1" 204 No Content
+[2m2026-01-16T07:46:02.509062Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847b-7fd5-8c87-8349b8f8c6e4[0m
+INFO:     127.0.0.1:41944 - "PATCH /execution/task-instances/019bc5c4-847b-7fd5-8c87-8349b8f8c6e4/state HTTP/1.1" 204 No Content
+[2m2026-01-16T07:46:03.992742Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5c4-847c-7b8a-9256-b71bb2b60166[0m
+[2m2026-01-16T07:46:03.995262Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847c-7b8a-9256-b71bb2b60166[0m
+INFO:     127.0.0.1:52790 - "PATCH /execution/task-instances/019bc5c4-847c-7b8a-9256-b71bb2b60166/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52790 - "PUT /execution/task-instances/019bc5c4-847c-7b8a-9256-b71bb2b60166/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52790 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52794 - "PUT /execution/task-instances/019bc5c4-847c-7b8a-9256-b71bb2b60166/heartbeat HTTP/1.1" 204 No Content
+[2m2026-01-16T07:46:09.331484Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5c4-847c-7b8a-9256-b71bb2b60166[0m
+INFO:     127.0.0.1:52794 - "PATCH /execution/task-instances/019bc5c4-847c-7b8a-9256-b71bb2b60166/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:62442 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62443 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62442 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62444 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62445 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62950 - "GET /ui/config HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62952 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances/web_to_bronze/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62953 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62951 - "GET /api/v2/dags/talend_multi_vm_pipeline/details HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62954 - "GET /api/v2/dags/talend_multi_vm_pipeline/tasks/web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62954 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T07%3A45%3A48%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62950 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagVersions?order_by=-version_number HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62952 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62953 - "GET /ui/backfills?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62955 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/hitlDetails?task_id=web_to_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62954 - "GET /api/v2/dags/talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62951 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62953 - "GET /api/v2/plugins HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62952 - "GET /ui/structure/structure_data?dag_id=talend_multi_vm_pipeline&external_dependencies=false&version_number=2 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62950 - "GET /api/v2/dagWarnings?dag_id=talend_multi_vm_pipeline HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62955 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances/web_to_bronze/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62961 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62960 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62960 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances/silver_to_gold/-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62962 - "GET /api/v2/dags/talend_multi_vm_pipeline/tasks/silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62961 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/hitlDetails?task_id=silver_to_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62961 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T07%3A45%3A48%2B00%3A00/taskInstances/silver_to_gold/logs/1?map_index=-1 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62988 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62988 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62988 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62989 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62990 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62991 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:30.879948Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e0-99e5-7dd4-82b1-fb601e049f91[0m
+[2m2026-01-16T08:16:30.885038Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e5-7dd4-82b1-fb601e049f91[0m
+INFO:     127.0.0.1:53732 - "PATCH /execution/task-instances/019bc5e0-99e5-7dd4-82b1-fb601e049f91/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53732 - "PUT /execution/task-instances/019bc5e0-99e5-7dd4-82b1-fb601e049f91/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53732 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62997 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62998 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62997 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62997 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62998 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:35.071443Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e5-7dd4-82b1-fb601e049f91[0m
+INFO:     127.0.0.1:53732 - "PATCH /execution/task-instances/019bc5e0-99e5-7dd4-82b1-fb601e049f91/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:62998 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62997 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62998 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62998 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:62997 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:36.474457Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52[0m
+[2m2026-01-16T08:16:36.477674Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52[0m
+INFO:     127.0.0.1:53742 - "PATCH /execution/task-instances/019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53742 - "PUT /execution/task-instances/019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:53742 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63000 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63000 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63001 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63001 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63000 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53742 - "PUT /execution/task-instances/019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52/heartbeat HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63000 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63000 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63001 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63002 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63003 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:44.380174Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52[0m
+INFO:     127.0.0.1:53742 - "PATCH /execution/task-instances/019bc5e0-99e6-7e1d-b5cc-8eb1f9cbbe52/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63003 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63003 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63003 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63003 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63003 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:46.191143Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e0-99e7-7fcc-a432-6889ad1aa262[0m
+[2m2026-01-16T08:16:46.194200Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e7-7fcc-a432-6889ad1aa262[0m
+INFO:     127.0.0.1:58590 - "PATCH /execution/task-instances/019bc5e0-99e7-7fcc-a432-6889ad1aa262/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58590 - "PUT /execution/task-instances/019bc5e0-99e7-7fcc-a432-6889ad1aa262/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:58590 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+[2m2026-01-16T08:16:51.401652Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e0-99e7-7fcc-a432-6889ad1aa262[0m
+INFO:     127.0.0.1:58590 - "PATCH /execution/task-instances/019bc5e0-99e7-7fcc-a432-6889ad1aa262/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63004 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63004 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63009 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63009 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A16%3A28%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63010 - "POST /api/v2/dags/talend_multi_vm_pipeline/dagRuns HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63010 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63013 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63010 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63014 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63015 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:17:09.751690Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e1-2f01-7ac5-94eb-79214e0e44c0[0m
+[2m2026-01-16T08:17:09.754199Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f01-7ac5-94eb-79214e0e44c0[0m
+INFO:     127.0.0.1:50640 - "PATCH /execution/task-instances/019bc5e1-2f01-7ac5-94eb-79214e0e44c0/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50640 - "PUT /execution/task-instances/019bc5e1-2f01-7ac5-94eb-79214e0e44c0/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50640 - "GET /execution/connections/ssh_vm_bronze HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63015 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63015 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63014 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63014 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63015 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:17:13.877172Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f01-7ac5-94eb-79214e0e44c0[0m
+INFO:     127.0.0.1:50640 - "PATCH /execution/task-instances/019bc5e1-2f01-7ac5-94eb-79214e0e44c0/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63016 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63016 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63017 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63017 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63016 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:17:15.706081Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e1-2f02-7a5b-b40c-635e4239b11f[0m
+[2m2026-01-16T08:17:15.708284Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f02-7a5b-b40c-635e4239b11f[0m
+INFO:     127.0.0.1:52798 - "PATCH /execution/task-instances/019bc5e1-2f02-7a5b-b40c-635e4239b11f/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52798 - "PUT /execution/task-instances/019bc5e1-2f02-7a5b-b40c-635e4239b11f/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:52798 - "GET /execution/connections/ssh_vm_silver HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63016 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63016 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63017 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63018 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63019 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63019 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63019 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63018 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63018 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63019 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52798 - "PUT /execution/task-instances/019bc5e1-2f02-7a5b-b40c-635e4239b11f/heartbeat HTTP/1.1" 204 No Content
+[2m2026-01-16T08:17:22.897708Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f02-7a5b-b40c-635e4239b11f[0m
+INFO:     127.0.0.1:52798 - "PATCH /execution/task-instances/019bc5e1-2f02-7a5b-b40c-635e4239b11f/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63020 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63020 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63020 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:17:24.590965Z[0m [[32m[1minfo     [0m] [1mTask started                  [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mhostname[0m=[35mepifood[0m [36mloc[0m=[35mtask_instances.py:199[0m [36mprevious_state[0m=[35mqueued[0m [36mti_id[0m=[35m019bc5e1-2f03-74d3-891b-ab1990869324[0m
+[2m2026-01-16T08:17:24.593898Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:212[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f03-74d3-891b-ab1990869324[0m
+INFO:     127.0.0.1:50026 - "PATCH /execution/task-instances/019bc5e1-2f03-74d3-891b-ab1990869324/run HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50026 - "PUT /execution/task-instances/019bc5e1-2f03-74d3-891b-ab1990869324/heartbeat HTTP/1.1" 204 No Content
+INFO:     127.0.0.1:50026 - "GET /execution/connections/ssh_vm_gold HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/hitlDetails HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63021 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+[2m2026-01-16T08:17:29.212018Z[0m [[32m[1minfo     [0m] [1mTask instance state updated   [0m [[0m[1m[34mairflow.api_fastapi.execution_api.routes.task_instances[0m][0m [36mloc[0m=[35mtask_instances.py:424[0m [36mnew_state[0m=[35msuccess[0m [36mrows_affected[0m=[35m1[0m [36mti_id[0m=[35m019bc5e1-2f03-74d3-891b-ab1990869324[0m
+INFO:     127.0.0.1:50026 - "PATCH /execution/task-instances/019bc5e1-2f03-74d3-891b-ab1990869324/state HTTP/1.1" 204 No Content
+INFO:     172.31.240.3:63022 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63022 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63022 - "GET /ui/grid/ti_summaries/talend_multi_vm_pipeline/manual__2026-01-16T08%3A17%3A07%2B00%3A00 HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63022 - "GET /api/v2/dags/talend_multi_vm_pipeline/dagRuns/manual__2026-01-16T08%3A17%3A07%2B00%3A00/taskInstances?limit=50&offset=0&order_by=-start_date&order_by=-run_after HTTP/1.1" 200 OK
+INFO:     172.31.240.3:63022 - "GET /ui/grid/runs/talend_multi_vm_pipeline?limit=10&order_by=-run_after HTTP/1.1" 200 OK
