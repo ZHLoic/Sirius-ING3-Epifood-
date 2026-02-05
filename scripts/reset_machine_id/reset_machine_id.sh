@@ -18,9 +18,15 @@ echo "$REMOTE_PASSWORD" | sudo -S rm -f /etc/machine-id
 echo "$REMOTE_PASSWORD" | sudo -S rm -f /var/lib/dbus/machine-id
 echo "$REMOTE_PASSWORD" | sudo -S rm -f /var/lib/systemd/network/* 2>/dev/null
 
+echo "machine-id supprimé"
+
 echo "$REMOTE_PASSWORD" | sudo -S systemd-machine-id-setup
+
+echo "nouvelle machine id:"
 cat /etc/machine-id
 
+
+echo "$REMOTE_PASSWORD" | sudo -S apt install -y isc-dhcp-client
 echo "$REMOTE_PASSWORD" | sudo -S dhclient -r
 echo "$REMOTE_PASSWORD" | sudo -S rm -f /var/lib/dhcp/* 2>/dev/null
 

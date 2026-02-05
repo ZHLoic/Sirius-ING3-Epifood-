@@ -1,14 +1,11 @@
 #!/bin/bash
 # script permetant de créer un user avec les droits sudo et de deployer sa clé publique.
-if [ $# -lt 3 ]; then
-    echo "Usage: $0 <REMOTE_HOST> <REMOTE_USER>"
-        exit 1
-fi
 
 CONFIG_FILE=config.conf
 HOSTS="hosts.conf"
-REMOTE_HOST="$1"
-REMOTE_USER="$2"
+#REMOTE_HOST="$3"
+REMOTE_USER= epifooding
+REMOTE_PASSWORD=$2
 
 source "$CONFIG_FILE"
 
@@ -26,7 +23,7 @@ echo "[INFO] Création de l'utilisateur : $USERNAME"
 while IFS= read -r ligne; do
     echo "ajout de $USERNAME dans la vm $ligne"   # renvoie le contenu de la ligne
 
-    sshpass -p "$REMOTE_PASSWORD" ssh -o StrictHostKeyChecking=no "$REMOTE_USER@$REMOTE_HOST" bash <<EOF
+    sshpass -p "$REMOTE_PASSWORD" ssh -o StrictHostKeyChecking=no "$REMOTE_USER@$ligne" bash <<EOF
 
     # 1. Créer l'utilisateur s'il n'existe pas
     if ! id "$USERNAME" >/dev/null 2>&1; then
