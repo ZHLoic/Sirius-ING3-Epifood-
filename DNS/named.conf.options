@@ -1,0 +1,38 @@
+//source: https://www.it-connect.fr/dns-avec-bind-9/
+
+// Autoriser uniquement certains réseaux à solliciter ce DNS
+acl "lan" {
+        172.31.248.0/21; //resau lan episen
+        localhost;
+        localnets;
+};
+
+acl "vpn" {
+        172.31.240.0/21; //resau lan episen
+        localhost;
+        localnets;
+};
+
+options {
+        // Répertoire de travail de Bind
+        directory "/var/cache/bind";
+
+        // Redirecteurs DNS (résolveurs externes)
+        forwarders {
+                1.1.1.1;
+                9.9.9.9;
+        };
+
+        // Mode récursif, pour résoudre les noms externes 
+        recursion yes;
+
+        // Active la validation DNSSEC (vérifier l'authenticité des réponses DNS signées)
+        dnssec-validation auto;
+
+        // Ecouter sur toutes les interfaces réseau en IPv4 et IPv6
+        listen-on { any; };
+        listen-on-v6 { any; };
+
+        // Autoriser les requêtes pour les hôtes des ACL
+        allow-query { lan;vpn; };
+};

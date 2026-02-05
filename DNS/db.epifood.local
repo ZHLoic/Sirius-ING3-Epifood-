@@ -1,0 +1,13 @@
+;
+; BIND data file for epifood.local
+$TTL    604800
+@       IN      SOA     epifood.local. admin.epifood.local. (
+                              2         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+;
+@                   IN      NS      epifood.local.
+@                   IN      A       172.31.253.49
+tst                 IN      A       172.31.249.136
