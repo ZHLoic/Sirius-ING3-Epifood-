@@ -1,17 +1,17 @@
 //source: https://www.it-connect.fr/dns-avec-bind-9/
 
 // Autoriser uniquement certains réseaux à solliciter ce DNS
-acl "lan" {
-        172.31.248.0/21; //resau lan episen
-        localhost;
-        localnets;
-};
+//acl "lan" {
+//        172.31.248.0/21; //resau lan episen
+//        localhost;
+//        localnets;
+//};
 
-acl "vpn" {
-        172.31.240.0/21; //resau lan episen
-        localhost;
-        localnets;
-};
+//acl "vpn" {
+//        172.31.240.0/21; //resau lan episen
+//        localhost;
+//        localnets;
+//};
 
 options {
         // Répertoire de travail de Bind
@@ -34,5 +34,5 @@ options {
         listen-on-v6 { any; };
 
         // Autoriser les requêtes pour les hôtes des ACL
-        allow-query { lan;vpn; };
+//        allow-query { lan;vpn; };
 };
