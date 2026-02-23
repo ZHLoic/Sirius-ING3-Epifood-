@@ -1,37 +1,35 @@
 #!/bin/bash
 
-## Create and maintain users for Raspberry
-
-echo récupération des clé
-
-#!/bin/bash
 # gather ssh public keys from github profile
 # no args
 # one conf file store username
-users_to_fetch=users.conf # end the file with an empty line
-machines_to_fetch=machines.conf
-if [ ! -f $users_to_fetch ]; then
-  echo Erreur : fichier introuvable
+
+echo récupération des clé
+
+USERS_TO_FETCH=users.conf # end the file with an empty line
+
+if [ ! -f $USERS_TO_FETCH ]; then
+  echo Erreur : user file unreacheable
   exit 1
 fi
 
-dos2unix $users_to_fetch
+dos2unix $USERS_TO_FETCH
 
 # refresh pub keys
-while IFS= read -r people; do
-  fichier=files/$people.key.pub
+while IFS= read -r PEOPLES; do
+  FILES=files/$PEOPLES.key.pub
 
-  if [ -f $fichier ]; then
-    echo file found : $people
+  if [ -f $FILES ]; then
+    echo file found : $PEOPLES
     echo delete then wget
-    rm $fichier
+    rm $FILES
   else
-    echo download : $people
+    echo download : $PEOPLES
   fi
-  wget -O $fichier https://github.com/$people.keys
-done < $users_to_fetch
+  wget -O $FILES https://github.com/$PEOPLES.keys
+done < $USERS_TO_FETCH
 
-echo fin de la récupération des clé
-echo déploiement des clé
+echo keys retrieved succesfully
+echo Now it's Ansible's turn :
 
 ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml
