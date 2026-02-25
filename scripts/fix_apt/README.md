@@ -17,7 +17,7 @@ N: Updating from such a repository can't be done securely, and is therefore disa
 N: See apt-secure(8) manpage for repository creation and user configuration details.
 
 alors :
-vim /etc/apt/sources.list
+sudo vim /etc/apt/sources.list
 commenter la ligne deb [check-date=no] file:///cdrom jammy main restricted
 
 jusqu'ici le problème est survenu sur les vm:
