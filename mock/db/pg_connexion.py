@@ -1,7 +1,6 @@
-import psycopg2
 from psycopg2.extras import RealDictCursor
+import psycopg2
 
-# Connexion à la base
 def get_connexion():
     conn = psycopg2.connect(
         host="172.31.252.17",
@@ -13,13 +12,25 @@ def get_connexion():
 
 def recuperer_recettes(conn):
     """
-    Récupère toutes les recettes
+    Récupère toutes les recettes depuis PostgreSQL
     """
-    cur = conn.cursor(cursor_factory=RealDictCursor)
-    cur.execute("""
-        SELECT _id, name, ingredients, diet, prep_time, cook_time, flavor_profile, course, state, region
-        FROM "goldRecipies";
-    """)
-    recettes = cur.fetchall()
-    cur.close()
-    return recettes
+    cur = conn.cursor()  # simple cursor pour éviter blocage
+    try:
+        print("[DEBUG] Avant execute SQL")
+        cur.execute("""
+            SELECT order_id, category, name, description, price,
+                   start_order_time, prep_time, end_time_prep, status
+            FROM "goldRecipies" LIMIT 100000;
+        """)
+        print("[DEBUG] Après execute SQL")
+
+        recettes = cur.fetchall()
+        print(f"[DEBUG] fetchall OK, {len(recettes)} recettes récupérées")
+        return recettes
+
+    except Exception as e:
+        print(f"[ERROR] Exception dans recuperer_recettes: {e}")
+        return []
+
+    finally:
+        cur.close()

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  core-operational:
+    build: .
+    ports:
+      - "6000:6000"
+    environment:
+      - SPRING_KAFKA_BOOTSTRAP_SERVERS=172.31.249.46:9092
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://172.31.252.17:5432/gold
+      - SPRING_DATASOURCE_USERNAME=mock_user
+      - SPRING_DATASOURCE_PASSWORD=epifooding3

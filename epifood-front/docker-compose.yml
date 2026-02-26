@@ -1,0 +1,7 @@
+version: '3.8'
+
+services:
+  epifood-front:
+    build: .
+    ports:
+      - "80:80"

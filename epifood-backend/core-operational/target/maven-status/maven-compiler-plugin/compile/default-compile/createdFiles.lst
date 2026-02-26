@@ -1,0 +1,6 @@
+fr/upec/episen/sirius/model/Order.class
+fr/upec/episen/sirius/kafka/OrderConsumer.class
+fr/upec/episen/sirius/repository/OrderRepository.class
+fr/upec/episen/sirius/service/OrderService.class
+fr/upec/episen/sirius/kafka/OrderProducer.class
+fr/upec/episen/sirius/CoreApplication.class
