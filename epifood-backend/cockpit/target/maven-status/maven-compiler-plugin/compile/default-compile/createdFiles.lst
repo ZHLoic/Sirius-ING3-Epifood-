@@ -1,0 +1,8 @@
+fr/upec/episen/sirius/model/Order.class
+fr/upec/episen/sirius/CockpitApplication.class
+fr/upec/episen/sirius/cors/CorsConfig.class
+fr/upec/episen/sirius/websocket/OrderWebSocketHandler.class
+fr/upec/episen/sirius/kafka/KafkaOrderCons.class
+fr/upec/episen/sirius/controller/OrderController.class
+fr/upec/episen/sirius/websocket/WebSocketConfig.class
+fr/upec/episen/sirius/service/OrderStore.class

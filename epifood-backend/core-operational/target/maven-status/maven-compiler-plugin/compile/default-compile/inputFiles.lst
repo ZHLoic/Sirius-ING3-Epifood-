@@ -1,0 +1,6 @@
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/CoreApplication.java
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/kafka/OrderProducer.java
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/service/OrderService.java
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/model/Order.java
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/kafka/OrderConsumer.java
+/mnt/c/Users/ASUS/OneDrive/Documents/Cours/SIRIUS/ING3/Sirius-ING3-Epifood-/epifood-backend/core-operational/src/main/java/fr/upec/episen/sirius/repository/OrderRepository.java
