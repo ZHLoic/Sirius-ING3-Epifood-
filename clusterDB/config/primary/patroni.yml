@@ -1,0 +1,54 @@
+scope: epifood
+namespace: /db/
+name: pg1
+
+restapi:
+  listen: 172.31.252.17:8008
+  connect_address: 172.31.252.17:8008
+
+etcd3:
+  hosts:
+    - 172.31.252.17:2379
+    - 172.31.252.233:2379
+    - 172.31.249.151:2379
+
+bootstrap:
+  dcs:
+    ttl: 30
+    loop_wait: 10
+    retry_timeout: 10
+    maximum_lag_on_failover: 1048576
+    postgresql:
+      use_pg_rewind: true
+  initdb:
+    - encoding: UTF8
+    - data-checksums
+  pg_hba:
+    - host replication replicator 172.31.252.0/24 md5
+    - host all all 0.0.0.0/0 md5
+  users:
+    admin:
+      password: epifooding3
+      options:
+        - createrole
+        - createdb
+
+postgresql:
+  listen: 172.31.252.17:5432
+  connect_address: 172.31.252.17:5432
+  data_dir: /var/lib/postgresql/16/main
+  bin_dir: /usr/lib/postgresql/16/bin
+  config_dir: /etc/postgresql/16/main
+  authentication:
+    replication:
+      username: replicator
+      password: replicator_pass
+    superuser:
+      username: postgres
+      password: epifooding3
+
+tags:
+  nofailover: false
+  noloadbalance: false
+  clonedfrom: false
+  nosync: false
