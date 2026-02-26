@@ -17,7 +17,7 @@ sudo apt dist-upgrade
 sudo apt install -y apt-transport-https gnupg ca-certificates curl software-properties-common inetutils-traceroute
 ```
 
-suppr package au cas ou truc bizarre
+Supprimer les anciens packages au cas ou il y a des versions bizzarre
 ```sh 
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 ```
@@ -77,7 +77,7 @@ Dans le fichier /etc/sysctl.d/k8s.conf coller:
 net.ipv4.ip_forward=1
 ```
 
-vérifier que net.ipv4.ip_forward = 1 avec
+Vérifier que net.ipv4.ip_forward = 1 avec
 ```sh
 sudo sysctl --system
 ```
@@ -113,4 +113,23 @@ sudo apt-mark hold kubelet kubeadm kubectl
 ```sh
 shutdown now
 ```
-faire le template
+Faire le template sur vsphere
+Nom temmplate: Epifood template ubuntu 22.04 k8s
+
+Créer au moins 3 vm controlleur, pour les noeuds on verra plus tard .
+- ip controller 1  : 172.31.253.236
+- ip controlleur 2 : 172.31.250.9
+
+Je change pas le hostname mais au cas où si futur moi le veut:
+```sh
+hostnamectl set-hostname <hostname>.<domain_name>
+```
+
+snap sur les master et les worker
+
+# Setup le premier controlleur
+```sh
+sudo kubeadm init --pod-network-cidr 10.244.0.0 --control-plane-endpoint "<vip du cluster>:6443" --upload-certs --v=5
+```
+
+# Setup le load balancer
