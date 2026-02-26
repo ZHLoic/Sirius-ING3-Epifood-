@@ -31,5 +31,14 @@ done < $USERS_TO_FETCH
 
 echo keys retrieved succesfully
 echo Now it's Ansible's turn :
+echo ''
+ansible-inventory -i list_servers.yml --graph
 
-ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml
+echo 'help for the question underneath : <groupe|host|expression>
+exemple :
+  - all
+  - K8S
+  - NCC:!K8S:!PG:!HA'
+
+read -p 'Which group should be affected among those :' group
+ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml -l "$group"
