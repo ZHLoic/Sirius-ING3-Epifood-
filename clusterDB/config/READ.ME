@@ -1,0 +1,4 @@
+patronictl -c /etc/patroni/patroni.yml switchover epifood --leader pg2 --candidate pg1 --force
+
+Cette commande force une switchover dans le cluster Patroni.
+Elle désigne pg2 comme leader actuel et bascule le rôle de leader sur pg1 en utilisant la configuration /etc/patroni/patroni.yml.
