@@ -20,7 +20,7 @@ export default function OrderList({ orders }) {
             <span className="order-description">{order.description}</span>
           </div>
           {order.prep_time && (
-            <div className="order-time">⏱ {order.prep_time} min</div>
+            <div className="order-time">⏱ {Math.min(order.prep_time, 3)} min</div>
           )}
         </div>
       ))}
