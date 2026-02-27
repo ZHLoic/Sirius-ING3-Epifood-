@@ -1,6 +1,6 @@
 export async function sendOrderApi(id) {
   // appelle Cockpit Backend
-  const res = await fetch(`http://172.31.253.89:5000/orders/${id}/send`, {
+  const res = await fetch(`http://172.31.252.204:5000/orders/${id}/send`, {
     method: 'POST',
   });
   if (!res.ok) throw new Error('Erreur envoi commande');
@@ -8,7 +8,7 @@ export async function sendOrderApi(id) {
 }
 
 export async function prepareOrderApi(id) {
-  const res = await fetch(`http://172.31.253.89:5000/orders/${id}/prepare`, {
+  const res = await fetch(`http://172.31.252.204:5000/orders/${id}/prepare`, {
     method: 'POST',
   });
   if (!res.ok) throw new Error('Erreur préparation');

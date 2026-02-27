@@ -5,14 +5,14 @@ export function useOrders() {
 
   // charge les commandes existantes au démarrage
   useEffect(() => {
-    fetch('http://172.31.253.89:5000/orders')
+    fetch('http://172.31.252.204:5000/orders')
       .then(res => res.json())
       .then(data => setOrders(data));
   }, []);
 
   // écoute les mises à jour en temps réel
   useEffect(() => {
-    const ws = new WebSocket('ws://172.31.253.89:5000/ws/orders');
+    const ws = new WebSocket('ws://172.31.252.204:5000/ws/orders');
     ws.onmessage = (event) => {
       const data = JSON.parse(event.data);
       setOrders(prev => {
