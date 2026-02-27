@@ -11,3 +11,35 @@ $TTL    604800
 @                   IN      NS      dns-srv.epifood.local.
 dns-srv             IN      A       172.31.253.49
 tst                 IN      A       172.31.249.136
+; ── HA Proxy ──────────────────────────────────────────────
+epifood-haproxy1            IN  A  172.31.250.185
+
+; ── NCC ───────────────────────────────────────────────────
+epifood-cockpit-back-ncc    IN  A  172.31.253.89
+epifood-core-back-ncc       IN  A  172.31.250.2
+epifood-front-ncc           IN  A  172.31.250.90
+epifood-kafka               IN  A  172.31.249.46
+epifood-mock                IN  A  172.31.252.60
+epifood-mqtt                IN  A  172.31.253.218
+
+; ── K8S ───────────────────────────────────────────────────
+epifood-k-master1           IN  A  172.31.253.236
+epifood-k-master2           IN  A  172.31.250.9
+epifood-k-master3           IN  A  172.31.250.190
+
+; ── PG ────────────────────────────────────────────────────
+epifood-db-replica1         IN  A  172.31.252.233
+epifood-db-replica2         IN  A  172.31.249.151
+
+; ── Pipeline de données ───────────────────────────────────
+epifood-bronze              IN  A  172.31.253.66
+epifood-airflow             IN  A  172.31.249.231
+epifood-postgres-pipeline   IN  A  172.31.252.17
+epifood-spark               IN  A  172.31.252.182
+epifood-storage-pipeline    IN  A  172.31.252.148
+
+; ── Sécurité ──────────────────────────────────────────────
+epifood-revproxy            IN  A  172.31.252.204
+
+; ── Divers ────────────────────────────────────────────────
+epifood-front               IN  A  172.31.250.120
