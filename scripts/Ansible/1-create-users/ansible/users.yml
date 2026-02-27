@@ -12,10 +12,13 @@
     apt:
       update_cache: yes
       cache_valid_time: 3600
+    when: upgrade_packages | default(false)
 
   - name: Upgrade all packages
     apt:
       upgrade: dist
+    when: upgrade_packages | default(false)
+
   - name: create group admin
     group:
       name: "admin"
@@ -45,3 +48,18 @@
       mode: '0440'
       validate: /usr/sbin/visudo -cf %s
 
+  - name: Set custom DNS server in /etc/resolv.conf
+    copy:
+      dest: /etc/resolv.conf
+      content: |
+        nameserver 172.31.250.139
+        nameserver 8.8.8.8
+        search epifood.internal
+      mode: '0644'
+
+  - name: Prevent other services from overwriting resolv.conf
+    copy:
+      dest: /etc/dhcp/dhclient.conf
+      content: |
+        supersede domain-name-servers 172.31.250.139, 8.8.8.8;
+      mode: '0644'

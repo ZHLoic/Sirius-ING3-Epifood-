@@ -41,4 +41,18 @@ exemple :
   - NCC:!K8S:!PG:!HA'
 
 read -p 'Which group should be affected among those :' group
-ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml -l "$group"
+
+echo ''
+echo ''
+echo ''
+read -p 'Upgrade all packages ? (y/n) : ' upgrade
+
+EXTRA_VARS=""
+if [[ "$upgrade" == "y" || "$upgrade" == "Y" ]]; then
+    EXTRA_VARS="-e upgrade_packages=true"
+    echo "Package upgrade enabled"
+else
+    echo "Package upgrade skipped"
+fi
+
+ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml -l "$group" $EXTRA_VARS
