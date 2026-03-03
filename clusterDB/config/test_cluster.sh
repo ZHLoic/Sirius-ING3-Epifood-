@@ -66,6 +66,8 @@ echo "Leader actuel : $CURRENT_LEADER, switchover vers pg1..."
 ssh cluster@$CURRENT_LEADER_IP "patronictl -c /etc/patroni/patroni.yml switchover epifood --leader $CURRENT_LEADER --candidate pg1 --force"
 sleep 10
 $PATRONICTL list
+echo "Etat du cluster final :"
+patronictl -c /etc/patroni/patroni.yml list
 echo ""
 echo "======================================"
 echo "TEST 8 : Verification des donnees"
@@ -74,3 +76,4 @@ psql -U postgres -h $PRIMARY -c "SELECT * FROM test_ha ORDER BY id;"
 echo ""
 echo "======================================"
 echo "TESTS TERMINES"
+echo "======================================"
