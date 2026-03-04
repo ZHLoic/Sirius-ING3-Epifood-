@@ -23,6 +23,8 @@ options {
                 9.9.9.9;
         };
 
+        forward only;
+        
         // Mode récursif, pour résoudre les noms externes 
         recursion yes;
 

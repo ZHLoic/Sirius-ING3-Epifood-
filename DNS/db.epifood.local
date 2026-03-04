@@ -38,8 +38,10 @@ epifood-postgres-pipeline   IN  A  172.31.252.17
 epifood-spark               IN  A  172.31.252.182
 epifood-storage-pipeline    IN  A  172.31.252.148
 
-; ── Sécurité ──────────────────────────────────────────────
-epifood-revproxy            IN  A  172.31.252.204
-
 ; ── Divers ────────────────────────────────────────────────
 epifood-front               IN  A  172.31.250.120
+epifood-revproxy            IN  A  172.31.252.204
+
+; ── Front ────────────────────────────────────────────────
+airflow              IN  CNAME  epifood-revproxy.epifood.local.
+epifood-dashboard              IN  CNAME  epifood-revproxy.epifood.local.

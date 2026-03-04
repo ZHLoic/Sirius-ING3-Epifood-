@@ -52,14 +52,14 @@
     copy:
       dest: /etc/resolv.conf
       content: |
-        nameserver 172.31.250.139
+        nameserver 172.31.253.49
         nameserver 8.8.8.8
-        search epifood.internal
+        search epifood.local
       mode: '0644'
 
   - name: Prevent other services from overwriting resolv.conf
     copy:
       dest: /etc/dhcp/dhclient.conf
       content: |
-        supersede domain-name-servers 172.31.250.139, 8.8.8.8;
+        supersede domain-name-servers 172.31.253.49, 8.8.8.8;
       mode: '0644'
