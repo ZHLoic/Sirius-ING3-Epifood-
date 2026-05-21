@@ -55,4 +55,4 @@ else
     echo "Package upgrade skipped"
 fi
 
-ansible-playbook -i list_servers.yml -u epifood -k -K -b users.yml -l "$group" $EXTRA_VARS
+ansible-playbook -i list_servers.yml -u epifood -k -K -b playbook.yml -l "$group" $EXTRA_VARS

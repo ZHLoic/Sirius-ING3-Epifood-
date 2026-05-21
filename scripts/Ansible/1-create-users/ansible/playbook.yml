@@ -1,0 +1,77 @@
+- name: deploy users
+  hosts: all
+  become: yes
+  vars:
+    users_admin:
+    - "Adriend671"
+    - "mqrcus456"
+    - "ZHLoic"
+    - "GGiraud"
+    ansible_timeout: 20
+    ansible_become_timeout: 20
+  tasks:
+  - name: Update apt cache
+    apt:
+      update_cache: yes
+      cache_valid_time: 3600
+    when: upgrade_packages | default(false)
+
+  - name: Upgrade all packages
+    apt:
+      upgrade: dist
+    when: upgrade_packages | default(false)
+
+  - name: Fix /etc/hosts BEFORE de changer le hostname
+    ansible.builtin.replace:
+      path: /etc/hosts
+      regexp: '\bepifood\b'
+      replace: "{{ inventory_hostname }}"
+
+  - name: Set hostname via ansible.builtin.hostname
+    ansible.builtin.hostname:
+      name: "{{ inventory_hostname }}"
+
+  - name: create group admin
+    group:
+      name: "admin"
+      state: present
+
+  - name: create admin user accounts
+    user:
+      name: "{{ item }}"
+      groups: "admin"
+      shell: /bin/bash
+      create_home: yes
+ 
+    with_items:
+    - "{{ users_admin }}"
+
+  - name: add authorized keys
+    authorized_key:
+      user: "{{ item }}"
+      key: "{{ lookup('file', 'files/'+ item + '.key.pub') }}"
+    with_items: 
+    - "{{ users_admin }}"
+ 
+  - name: Allow admin users to sudo without password
+    copy:
+      dest: /etc/sudoers.d/admin
+      content: "%admin ALL=(ALL) NOPASSWD: ALL"
+      mode: '0440'
+      validate: /usr/sbin/visudo -cf %s
+
+  - name: Set custom DNS server in /etc/resolv.conf
+    copy:
+      dest: /etc/resolv.conf
+      content: |
+        nameserver 172.31.253.49
+        nameserver 8.8.8.8
+        search epifood.local
+      mode: '0644'
+
+  - name: Prevent other services from overwriting resolv.conf
+    copy:
+      dest: /etc/dhcp/dhclient.conf
+      content: |
+        supersede domain-name-servers 172.31.253.49, 8.8.8.8;
+      mode: '0644'
