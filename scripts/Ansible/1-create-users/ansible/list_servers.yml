@@ -2,17 +2,23 @@ all:
   vars:
     ansible_ssh_common_args: '-o StrictHostKeyChecking=no'
   children:
-    HA:
-      hosts:
     NCC:
-      hosts:
-        haproxy:
-          ansible_host: 172.31.250.254
+      hosts: 
       children:
+        HA:
+          hosts:
+            haproxy:
+              ansible_host: 172.31.250.254
         K8S:
           hosts:
-            master1:
-              ansible_host: 172.31.252.43
+            master01:
+              ansible_host: 172.31.250.187
+            master02:
+              ansible_host: 172.31.250.115
+            worker01:
+              ansible_host: 172.31.250.128
+            worker02:
+              ansible_host: 172.31.250.154
         PG:
           hosts:
     PIP:

@@ -24,8 +24,8 @@
   - name: Fix /etc/hosts BEFORE de changer le hostname
     ansible.builtin.replace:
       path: /etc/hosts
-      regexp: '\bepifood\b'
-      replace: "{{ inventory_hostname }}"
+      regexp: '^127\.0\.1\.1.*'
+      replace: "127.0.1.1 {{ inventory_hostname }}"
 
   - name: Set hostname via ansible.builtin.hostname
     ansible.builtin.hostname:
