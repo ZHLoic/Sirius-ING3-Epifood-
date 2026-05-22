@@ -26,4 +26,4 @@ hpa:
 
 mosquitto:
   allowAnonymous: true
-  persistence: false
+  persistence: false      #en vrai faudrait de la persistence au cas ou
