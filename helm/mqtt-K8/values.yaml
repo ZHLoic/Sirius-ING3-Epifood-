@@ -21,8 +21,8 @@ service:
 hpa:
   minReplicas: 1
   maxReplicas: 10
-  cpuUtilization: 50
-  memoryUtilization: 70
+  cpuUtilization: 5
+  memoryUtilization: 10
 
 mosquitto:
   allowAnonymous: true
