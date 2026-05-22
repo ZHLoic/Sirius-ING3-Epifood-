@@ -3,7 +3,7 @@ image:
   tag: "2.0"
   pullPolicy: IfNotPresent
 
-replicaCount: 5
+replicaCount: 1
 
 resources:
   requests:
@@ -18,9 +18,9 @@ service:
   mqttPort: 1883
 
 hpa:
-  minReplicas: 2
+  minReplicas: 1
   maxReplicas: 10
-  cpuUtilization: 60
+  cpuUtilization: 50
   memoryUtilization: 70
 
 mosquitto:
