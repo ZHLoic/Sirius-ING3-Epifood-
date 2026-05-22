@@ -90,7 +90,11 @@ kubeadm join 172.31.250.254:6443 --token nix4wf.npi2u8k1jw0uqj2z \
         --discovery-token-ca-cert-hash sha256:719e315d412aa1efcb0246275557ebd16f503dbba7d16990f0b5521eb17e9727
 ```
 
-deployer le réseau calico qui permet au pod de communiquer entre eux malgré le fait qu'il soit sur des noeuds différent
+
+# Acceder au cluster
+
+copier la conf depuis une des machines dans /home/Adriend671/.kube/config
+la coller dans le home du user désiré puis:
 ```sh
-kubectl --kubeconfig=/etc/kubernetes/admin.conf apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.31.5/manifests/calico.yaml
+kubectl --kubeconfig=/home/Adriend671/.kube/config apply -f https://raw.githubusercontent.com/projectcalico/calico/v3.31.5/manifests/calico.yaml
 ```
