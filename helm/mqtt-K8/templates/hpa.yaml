@@ -23,3 +23,16 @@ spec:
         target:
           type: Utilization
           averageUtilization: {{ .Values.hpa.memoryUtilization }}
+  behavior:                               #spec scale down rapide
+    scaleDown:
+      stabilizationWindowSeconds: 20      #taille cache garde toute les analyse moins vielle que x sec
+      policies:
+      - type: Pods
+        value: 1                          
+        periodSeconds: 5                  #timing entre les analyse sys
+    scaleUp:                              #spec scale up rapide
+      stabilizationWindowSeconds: 10      
+      policies:
+      - type: Pods
+        value: 2                          
+        periodSeconds: 2
