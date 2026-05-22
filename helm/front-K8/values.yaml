@@ -1,0 +1,14 @@
+app: frontk8
+
+replicaCount: 1
+
+image:
+  repository: nginxdemos/hello
+  pullPolicy: Always
+  tag: "0.4-plain-text"
+
+service:
+  type: NodePort
+  port: 80
+  targetPort: 80
+  nodePort: 80
