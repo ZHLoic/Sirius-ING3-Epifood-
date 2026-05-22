@@ -7,8 +7,10 @@ all:
       children:
         HA:
           hosts:
-            haproxy:
+            haproxy01:
               ansible_host: 172.31.250.254
+            haproxy02:
+              ansible_host: 172.31.250.53
         K8S:
           hosts:
             master01:

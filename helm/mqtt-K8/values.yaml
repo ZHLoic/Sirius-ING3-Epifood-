@@ -1,0 +1,28 @@
+image:
+  repository: eclipse-mosquitto
+  tag: "2.0"
+  pullPolicy: IfNotPresent
+
+replicaCount: 2
+
+resources:
+  requests:
+    cpu: "100m"
+    memory: "64Mi"
+  limits:
+    cpu: "500m"
+    memory: "256Mi"
+
+service:
+  type: ClusterIP
+  mqttPort: 1883
+
+hpa:
+  minReplicas: 2
+  maxReplicas: 10
+  cpuUtilization: 60
+  memoryUtilization: 70
+
+mosquitto:
+  allowAnonymous: true
+  persistence: false
