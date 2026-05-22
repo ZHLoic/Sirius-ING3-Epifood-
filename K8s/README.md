@@ -1,1 +1,0 @@
-Install d'un cluster kubernetes multimaster
