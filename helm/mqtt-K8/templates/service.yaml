@@ -11,3 +11,4 @@ spec:
     - name: mqtt
       port: {{ .Values.service.mqttPort }}
       targetPort: {{ .Values.service.mqttPort }}
+      nodePort: {{ .Values.service.nodePort }}

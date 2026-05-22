@@ -14,8 +14,9 @@ resources:
     memory: "256Mi"
 
 service:
-  type: ClusterIP
+  type: NodePort
   mqttPort: 1883
+  nodePort: 31883
 
 hpa:
   minReplicas: 1
