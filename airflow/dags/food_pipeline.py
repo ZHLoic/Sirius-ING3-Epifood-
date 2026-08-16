@@ -12,6 +12,14 @@ with DAG(
     tags=["food", "mongodb", "pipeline"],
 ) as dag:
 
+    load_bronze = BashOperator(
+        task_id="load_bronze",
+        bash_command=(
+            "/home/epifood/airflow_venv/bin/python "
+            "/home/epifood/data_pipeline/scripts/load_bronze.py"
+        ),
+    )
+
     bronze_to_silver = BashOperator(
         task_id="bronze_to_silver",
         bash_command=(
@@ -28,4 +36,4 @@ with DAG(
         ),
     )
 
-    bronze_to_silver >> silver_to_gold
+    load_bronze >> bronze_to_silver >> silver_to_gold
